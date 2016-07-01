@@ -11,15 +11,15 @@ XIL-54180: Entry for Xilinx Open Hardware 2016.
 
 ## Directory structure ##
 
-bin/                    -- precompiled binaries
-doc/                    -- Project report
-data/                   -- Sample data
-hw/                     -- bitstream
-sd_image/               -- SD card image
-src/                    
-    - src/c/            -- software sources
-    - src/vhdl/         -- vhdl hardware sources
-    - src/hls/          -- Vivado HLS projects
+    - bin/                    -- precompiled binaries
+    - doc/                    -- Project report
+    - data/                   -- Sample data
+    - hw/                     -- bitstream
+    - sd_image/               -- SD card image
+    - src/                    
+        + src/c/              -- software sources
+        + src/vhdl/           -- vhdl hardware sources
+        + src/hls/            -- Vivado HLS projects
 
 
 ## Testing the project with prebuild binary/bitstream: ##
