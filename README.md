@@ -65,6 +65,7 @@ Option B:
 ### [Step 2.1:] Setup SD card ###
 
 Option A:
+
     - use existing SD card that boots Linux on ZedBoard
 
 Option B:
