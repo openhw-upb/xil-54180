@@ -1,0 +1,2 @@
+vhdl reconos_fifo_sync_v1_00_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_fifo_sync_v1_00_a/hdl/vhdl/reconos_fifo_sync.vhd
+vhdl work ../hdl/system_reconos_memif_mem2hwt_0_wrapper.vhd

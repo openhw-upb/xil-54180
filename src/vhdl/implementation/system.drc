@@ -1,0 +1,295 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Jun 30 18:35:48 2016
+
+drc -z system.ncd system.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   reconos_osif_intc_0/reconos_osif_intc_0/ipif_Bus2IP_RdCE is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <axi_mem/axi_mem/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.con
+   v_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue
+   /inst/fifo_gen_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fi
+   fo.mem/gdm.dm/Mram_RAM_RAMD_D1_O> is incomplete. The signal does not drive
+   any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_sw2hw_0/reconos_osif_sw2hw_0/Mram_ram3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_sw2hw_0/reconos_osif_sw2hw_0/Mram_ram4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_sw2hw_0/reconos_osif_sw2hw_0/Mram_ram2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_sw2hw_0/reconos_osif_sw2hw_0/Mram_ram1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_sw2hw_0/reconos_osif_sw2hw_0/Mram_ram5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <axi_mem/axi_mem/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.con
+   v_inst/gen_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_
+   queue/inst/fifo_gen_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sy
+   nc_fifo.mem/gdm.dm/Mram_RAM_RAMD_D1_O> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram13_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram12_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram9_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram11_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram8_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram18_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram17_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram14_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram15_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram10_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_hw2sw_0/reconos_osif_hw2sw_0/Mram_ram2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_hw2sw_0/reconos_osif_hw2sw_0/Mram_ram5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram7_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram1_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram5_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram6_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram16_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_hw2sw_0/reconos_osif_hw2sw_0/Mram_ram3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_hw2sw_0/reconos_osif_hw2sw_0/Mram_ram4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_osif_hw2sw_0/reconos_osif_hw2sw_0/Mram_ram1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram2_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram4_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram20_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram19_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_mem2hwt_0/reconos_memif_mem2hwt_0/Mram_ram3_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_samples/Mram_ram5_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_samples/Mram_ram4_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_samples/Mram_ram3_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_samples/Mram_ram1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_samples/Mram_ram2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram18_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram17_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_samples/Mram_ram5_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_samples/Mram_ram4_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_samples/Mram_ram3_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_samples/Mram_ram5_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_samples/Mram_ram4_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_samples/Mram_ram3_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram20_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram19_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_samples/Mram_ram5_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_samples/Mram_ram4_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_samples/Mram_ram3_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_samples/Mram_ram1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_samples/Mram_ram2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_samples/Mram_ram2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_samples/Mram_ram1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_samples/Mram_ram2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_samples/Mram_ram1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram10_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram9_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_features/Mram_ram1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_features/Mram_ram3_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_features/Mram_ram5_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram4_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram6_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_features/Mram_ram2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_wfl_features/Mram_ram4_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram3_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram12_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram2_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram8_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram7_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram5_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram16_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram14_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram15_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram11_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram1_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_features/Mram_ram4_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <reconos_memif_hwt2mem_0/reconos_memif_hwt2mem_0/Mram_ram13_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_features/Mram_ram2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_features/Mram_ram3_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_features/Mram_ram5_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_features/Mram_ram4_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_features/Mram_ram2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_features/Mram_ram3_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_ssc_features/Mram_ram1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_features/Mram_ram5_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_mav_features/Mram_ram1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_features/Mram_ram4_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_features/Mram_ram2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_features/Mram_ram5_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_features/Mram_ram3_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <slot_0/slot_0/fifo_zc_features/Mram_ram1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+DRC detected 0 errors and 93 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

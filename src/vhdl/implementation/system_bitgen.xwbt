@@ -1,0 +1,7 @@
+INFILE=/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/implementation/system.ncd
+OUTFILE=/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/implementation/system.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/implementation
+LICENSE=ISE
+USER_INFO=210756782_1777492317_210604744_561

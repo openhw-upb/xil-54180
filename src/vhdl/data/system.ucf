@@ -1,0 +1,10 @@
+
+
+NET "reconos_clk_0" TNM_NET = "NET_reconos_clk_0";
+TIMESPEC TS_reconos_clk_0 = PERIOD "NET_reconos_clk_0" 100000.0 kHz;
+
+
+
+#TIMEGRP "reconos_clk" = "reconos_clk_0";
+#TIMESPEC TS_01 = FROM "reconos_clk_0" TO "reconos_clock_clk" TIG;
+#TIMESPEC TS_02 = FROM "reconos_clock_clk" TO "reconos_clk_0" TIG;

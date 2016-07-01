@@ -1,0 +1,10 @@
+vhdl reconos_v3_01_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_v3_01_a/hdl/vhdl/reconos_pkg.vhd
+vhdl rt_feature_extraction_manager_v1_00_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/rt_feature_extraction_manager_v1_00_a/hdl/vhdl/reconos_thread.vhd
+vhdl rt_feature_extraction_manager_v1_00_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/rt_feature_extraction_manager_v1_00_a/hdl/vhdl/fe_ssc_am_submul_16s_16s_17s_33_1.vhd
+vhdl rt_feature_extraction_manager_v1_00_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/rt_feature_extraction_manager_v1_00_a/hdl/vhdl/rt_feature_extraction_manager.vhd
+vhdl rt_feature_extraction_manager_v1_00_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/rt_feature_extraction_manager_v1_00_a/hdl/vhdl/fe_zc.vhd
+vhdl rt_feature_extraction_manager_v1_00_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/rt_feature_extraction_manager_v1_00_a/hdl/vhdl/fe_mav.vhd
+vhdl rt_feature_extraction_manager_v1_00_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/rt_feature_extraction_manager_v1_00_a/hdl/vhdl/reconos_fifo_sync.vhd
+vhdl rt_feature_extraction_manager_v1_00_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/rt_feature_extraction_manager_v1_00_a/hdl/vhdl/fe_ssc.vhd
+vhdl rt_feature_extraction_manager_v1_00_a /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/rt_feature_extraction_manager_v1_00_a/hdl/vhdl/fe_wfl.vhd
+vhdl work ../hdl/system_slot_0_wrapper.vhd

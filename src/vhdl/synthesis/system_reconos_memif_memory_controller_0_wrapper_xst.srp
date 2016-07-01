@@ -1,0 +1,1783 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/thombang/repos/pg-hpepc-reconos/lda/build.hw/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_reconos_memif_memory_controller_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_reconos_memif_memory_controller_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_reconos_memif_memory_controller_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rdmux.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rdmux>.
+Parsing architecture <implementation> of entity <axi_master_burst_rdmux>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_demux.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_wr_demux>.
+Parsing architecture <implementation> of entity <axi_master_burst_wr_demux>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_skid2mm_buf.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_skid2mm_buf>.
+Parsing architecture <implementation> of entity <axi_master_burst_skid2mm_buf>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_skid_buf.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_skid_buf>.
+Parsing architecture <implementation> of entity <axi_master_burst_skid_buf>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_first_stb_offset.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_first_stb_offset>.
+Parsing architecture <implementation> of entity <axi_master_burst_first_stb_offset>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_stbs_set.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_stbs_set>.
+Parsing architecture <implementation> of entity <axi_master_burst_stbs_set>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_strb_gen.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_strb_gen>.
+Parsing architecture <implementation> of entity <axi_master_burst_strb_gen>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_fifo.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_fifo>.
+Parsing architecture <imp> of entity <axi_master_burst_fifo>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_pcc.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_pcc>.
+Parsing architecture <implementation> of entity <axi_master_burst_pcc>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_addr_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_addr_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_addr_cntl>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rddata_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rddata_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_rddata_cntl>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_status_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rd_status_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_rd_status_cntl>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wrdata_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_wrdata_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_wrdata_cntl>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_status_cntl.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_wr_status_cntl>.
+Parsing architecture <implementation> of entity <axi_master_burst_wr_status_cntl>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_reset.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_reset>.
+Parsing architecture <implementation> of entity <axi_master_burst_reset>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_cmd_status.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_cmd_status>.
+Parsing architecture <implementation> of entity <axi_master_burst_cmd_status>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rd_wr_cntlr>.
+Parsing architecture <implementation> of entity <axi_master_burst_rd_wr_cntlr>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_llink.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_rd_llink>.
+Parsing architecture <implementation> of entity <axi_master_burst_rd_llink>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_llink.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst_wr_llink>.
+Parsing architecture <implementation> of entity <axi_master_burst_wr_llink>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst.vhd" into library axi_master_burst_v1_00_a
+Parsing entity <axi_master_burst>.
+Parsing architecture <implementation> of entity <axi_master_burst>.
+Parsing VHDL file "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_v3_01_a/hdl/vhdl/reconos_pkg.vhd" into library reconos_v3_01_a
+Parsing package <reconos_pkg>.
+Parsing package body <reconos_pkg>.
+Parsing VHDL file "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/user_logic.vhd" into library reconos_memif_memory_controller_v1_00_a
+Parsing entity <user_logic>.
+Parsing architecture <imp> of entity <user_logic>.
+Parsing VHDL file "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/reconos_memif_memory_controller.vhd" into library reconos_memif_memory_controller_v1_00_a
+Parsing entity <reconos_memif_memory_controller>.
+Parsing architecture <imp> of entity <reconos_memif_memory_controller>.
+Parsing VHDL file "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/hdl/system_reconos_memif_memory_controller_0_wrapper.vhd" into library work
+Parsing entity <system_reconos_memif_memory_controller_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_reconos_memif_memory_controller_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_reconos_memif_memory_controller_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <reconos_memif_memory_controller> (architecture <imp>) with generics from library <reconos_memif_memory_controller_v1_00_a>.
+
+Elaborating entity <axi_master_burst> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_reset> (architecture <implementation>) from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_cmd_status> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_cmd_status.vhd" Line 430: Assignment to sig_pcc_cmd_rdy ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_first_stb_offset> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_stbs_set> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_cmd_status.vhd" Line 971: Assignment to sig_stat_tag_reg ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_rd_wr_cntlr> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:871 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" Line 581: Using initial value '0' for sig_md_error_reg since it is never assigned
+
+Elaborating entity <axi_master_burst_pcc> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_pcc.vhd" Line 766: Assignment to sig_input_reg_full ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_strb_gen> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_strb_gen> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_pcc.vhd" Line 1057: Assignment to sig_xfer_reg_full ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_pcc.vhd" Line 1848. Case statement is complete. others clause is never selected
+
+Elaborating entity <axi_master_burst_addr_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_addr_cntl.vhd" Line 665: Assignment to sig_next_tag_reg ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_rddata_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_rdmux> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rddata_cntl.vhd" Line 1353: Assignment to sig_coelsc_reg_empty ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_rd_status_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_skid_buf> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_wrdata_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wrdata_cntl.vhd" Line 1504: Assignment to sig_fifo_next_drr ignored, since the identifier is never used
+
+Elaborating entity <axi_master_burst_wr_status_cntl> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_fifo> (architecture <imp>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <srl_fifo_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <srl_fifo_rbu_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <cntr_incr_decr_addn_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+WARNING:HDLCompiler:89 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" Line 161: <muxcy_l> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" Line 171: <xorcy> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" Line 180: <fds> remains a black-box since it has no binding entity.
+
+Elaborating entity <dynshreg_f> (architecture <behavioral>) with generics from library <proc_common_v3_00_a>.
+WARNING:HDLCompiler:89 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" Line 197: <srlc16e> remains a black-box since it has no binding entity.
+
+Elaborating entity <axi_master_burst_fifo> (architecture <imp>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <srl_fifo_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <srl_fifo_rbu_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <dynshreg_f> (architecture <behavioral>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <axi_master_burst_skid2mm_buf> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_wr_demux> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_rd_llink> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <axi_master_burst_wr_llink> (architecture <implementation>) with generics from library <axi_master_burst_v1_00_a>.
+
+Elaborating entity <user_logic> (architecture <imp>) from library <reconos_memif_memory_controller_v1_00_a>.
+INFO:HDLCompiler:679 - "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/user_logic.vhd" Line 191. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_reconos_memif_memory_controller_0_wrapper>.
+    Related source file is "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/hdl/system_reconos_memif_memory_controller_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_reconos_memif_memory_controller_0_wrapper> synthesized.
+
+Synthesizing Unit <reconos_memif_memory_controller>.
+    Related source file is "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/reconos_memif_memory_controller.vhd".
+        C_M_AXI_ADDR_WIDTH = 32
+        C_M_AXI_DATA_WIDTH = 32
+        C_MAX_BURST_LEN = 64
+        C_MEMIF_DATA_WIDTH = 32
+INFO:Xst:3210 - "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/reconos_memif_memory_controller.vhd" line 180: Output port <m_axi_arcache> of the instance <ipif> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/reconos_memif_memory_controller.vhd" line 180: Output port <m_axi_awcache> of the instance <ipif> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/reconos_memif_memory_controller.vhd" line 180: Output port <md_error> of the instance <ipif> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/reconos_memif_memory_controller.vhd" line 180: Output port <bus2ip_mst_rearbitrate> of the instance <ipif> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/reconos_memif_memory_controller.vhd" line 180: Output port <bus2ip_mst_cmd_timeout> of the instance <ipif> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <reconos_memif_memory_controller> synthesized.
+
+Synthesizing Unit <axi_master_burst>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst.vhd".
+        C_M_AXI_ADDR_WIDTH = 32
+        C_M_AXI_DATA_WIDTH = 32
+        C_MAX_BURST_LEN = 64
+        C_ADDR_PIPE_DEPTH = 1
+        C_NATIVE_DATA_WIDTH = 32
+        C_LENGTH_WIDTH = 12
+        C_FAMILY = "virtex6"
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst.vhd" line 705: Output port <rd_arid> of the instance <I_RD_WR_CNTRL_MODULE> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst.vhd" line 705: Output port <wr_awid> of the instance <I_RD_WR_CNTRL_MODULE> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst.vhd" line 705: Output port <rdwr_md_error> of the instance <I_RD_WR_CNTRL_MODULE> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <axi_master_burst> synthesized.
+
+Synthesizing Unit <axi_master_burst_reset>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_reset.vhd".
+    Set property "KEEP = TRUE" for signal <sig_cmd_reset_reg>.
+    Set property "equivalent_register_removal = no" for signal <sig_cmd_reset_reg>.
+    Set property "KEEP = TRUE" for signal <sig_rdwr_reset_reg>.
+    Set property "equivalent_register_removal = no" for signal <sig_rdwr_reset_reg>.
+    Set property "KEEP = TRUE" for signal <sig_llink_reset_reg>.
+    Set property "equivalent_register_removal = no" for signal <sig_llink_reset_reg>.
+    Found 1-bit register for signal <sig_rdwr_reset_reg>.
+    Found 1-bit register for signal <sig_llink_reset_reg>.
+    Found 1-bit register for signal <sig_axi_por_reg1>.
+    Found 1-bit register for signal <sig_axi_por_reg2>.
+    Found 1-bit register for signal <sig_axi_por_reg3>.
+    Found 1-bit register for signal <sig_axi_por_reg4>.
+    Found 1-bit register for signal <sig_axi_por_reg5>.
+    Found 1-bit register for signal <sig_axi_por_reg6>.
+    Found 1-bit register for signal <sig_axi_por_reg7>.
+    Found 1-bit register for signal <sig_axi_por_reg8>.
+    Found 1-bit register for signal <sig_axi_por2rst_out>.
+    Found 1-bit register for signal <sig_cmd_reset_reg>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <axi_master_burst_reset> synthesized.
+
+Synthesizing Unit <axi_master_burst_cmd_status>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_cmd_status.vhd".
+        C_ADDR_WIDTH = 32
+        C_NATIVE_DWIDTH = 32
+        C_CMD_WIDTH = 68
+        C_CMD_BTT_USED_WIDTH = 12
+        C_STS_WIDTH = 8
+        C_FAMILY = "virtex6"
+WARNING:Xst:647 - Input <ip2bus_mst_lock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ip2bus_mst_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <sig_pop_status> equivalent to <sig_cmd_cmplt_reg> has been removed
+    Found 1-bit register for signal <sig_cmd_cmplt_reg>.
+    Found 1-bit register for signal <sig_cmd_mstrd_req>.
+    Found 1-bit register for signal <sig_cmd_mstwr_req>.
+    Found 32-bit register for signal <sig_cmd_mst_addr>.
+    Found 12-bit register for signal <sig_cmd_mst_length>.
+    Found 4-bit register for signal <sig_cmd_mst_be>.
+    Found 1-bit register for signal <sig_cmd_type_req>.
+    Found 1-bit register for signal <sig_cmd_full_reg>.
+    Found 1-bit register for signal <sig_cmd_empty_reg>.
+    Found 4-bit register for signal <sig_tag_counter>.
+    Found 1-bit register for signal <sig_doing_read_reg>.
+    Found 1-bit register for signal <sig_doing_write_reg>.
+    Found 1-bit register for signal <sig_stat_error_reg>.
+    Found 1-bit register for signal <sig_status_reg_full>.
+    Found 1-bit register for signal <sig_status_reg_empty>.
+    Found 1-bit register for signal <sig_error_sh_reg>.
+    Found 1-bit register for signal <sig_int_error_pulse_reg>.
+    Found 1-bit register for signal <sig_init_reg1>.
+    Found 1-bit register for signal <sig_init_reg2>.
+    Found 1-bit register for signal <sig_cmdack_reg>.
+    Found 4-bit adder for signal <sig_tag_counter[3]_GND_9_o_add_21_OUT> created at line 787.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  68 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <axi_master_burst_cmd_status> synthesized.
+
+Synthesizing Unit <axi_master_burst_first_stb_offset>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_first_stb_offset.vhd".
+        C_STROBE_WIDTH = 4
+        C_OFFSET_WIDTH = 8
+    Summary:
+	no macro.
+Unit <axi_master_burst_first_stb_offset> synthesized.
+
+Synthesizing Unit <axi_master_burst_stbs_set>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_stbs_set.vhd".
+        C_STROBE_WIDTH = 4
+    Found 256x4-bit Read Only RAM for signal <sig_stbs_asserted<3:0>>
+    Summary:
+	inferred   1 RAM(s).
+Unit <axi_master_burst_stbs_set> synthesized.
+
+Synthesizing Unit <axi_master_burst_rd_wr_cntlr>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd".
+        C_RDWR_ARID = 0
+        C_RDWR_ID_WIDTH = 4
+        C_RDWR_ADDR_WIDTH = 32
+        C_RDWR_MDATA_WIDTH = 32
+        C_RDWR_SDATA_WIDTH = 32
+        C_RDWR_MAX_BURST_LEN = 64
+        C_RDWR_BTT_USED = 12
+        C_RDWR_ADDR_PIPE_DEPTH = 1
+        C_RDWR_PCC_CMD_WIDTH = 68
+        C_RDWR_STATUS_WIDTH = 8
+        C_FAMILY = "virtex6"
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1044: Output port <mstr2dre_tag> of the instance <I_MSTR_PCC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1044: Output port <mstr2dre_dre_src_align> of the instance <I_MSTR_PCC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1044: Output port <mstr2dre_dre_dest_align> of the instance <I_MSTR_PCC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1044: Output port <mstr2dre_btt> of the instance <I_MSTR_PCC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1044: Output port <mstr2dre_cmd_valid> of the instance <I_MSTR_PCC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1044: Output port <mstr2dre_drr> of the instance <I_MSTR_PCC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1044: Output port <mstr2dre_eof> of the instance <I_MSTR_PCC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1044: Output port <mstr2dre_cmd_cmplt> of the instance <I_MSTR_PCC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1044: Output port <mstr2dre_calc_error> of the instance <I_MSTR_PCC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1168: Output port <addr2rst_stop_cmplt> of the instance <I_ADDR_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1245: Output port <mm2s_dre_src_align> of the instance <I_RD_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1245: Output port <mm2s_dre_dest_align> of the instance <I_RD_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1245: Output port <data2rst_stop_cmplt> of the instance <I_RD_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1245: Output port <mm2s_dre_new_align> of the instance <I_RD_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1245: Output port <mm2s_dre_use_autodest> of the instance <I_RD_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1245: Output port <mm2s_dre_flush> of the instance <I_RD_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1245: Output port <data2all_dcntlr_halted> of the instance <I_RD_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1449: Output port <s2mm_wr_len> of the instance <I_WR_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1449: Output port <data2rst_stop_cmplt> of the instance <I_WR_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1449: Output port <s2mm_ld_nxt_len> of the instance <I_WR_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1449: Output port <data2addr_data_rdy> of the instance <I_WR_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1449: Output port <data2all_tlast_error> of the instance <I_WR_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1449: Output port <data2all_dcntlr_halted> of the instance <I_WR_DATA_CNTL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_wr_cntlr.vhd" line 1544: Output port <wsc2rst_stop_cmplt> of the instance <I_WR_STATUS_CNTLR> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <sig_doing_write_reg>.
+    Found 1-bit register for signal <sig_doing_read_reg>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <axi_master_burst_rd_wr_cntlr> synthesized.
+
+Synthesizing Unit <axi_master_burst_pcc>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_pcc.vhd".
+        C_DRE_ALIGN_WIDTH = 1
+        C_SEL_ADDR_WIDTH = 2
+        C_ADDR_WIDTH = 32
+        C_STREAM_DWIDTH = 32
+        C_MAX_BURST_LEN = 64
+        C_CMD_WIDTH = 68
+        C_TAG_WIDTH = 4
+        C_BTT_USED = 12
+        C_SUPPORT_INDET_BTT = 0
+WARNING:Xst:647 - Input <cmd2mstr_command<23:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <sig_input_tag_reg>.
+    Found 6-bit register for signal <sig_input_dsa_reg>.
+    Found 1-bit register for signal <sig_input_drr_reg>.
+    Found 1-bit register for signal <sig_input_eof_reg>.
+    Found 1-bit register for signal <sig_input_reg_empty>.
+    Found 1-bit register for signal <sig_calc_error_reg>.
+    Found 1-bit register for signal <sig_calc_error_pushed>.
+    Found 2-bit register for signal <sig_strbgen_addr_reg>.
+    Found 3-bit register for signal <sig_strbgen_bytes_reg>.
+    Found 2-bit register for signal <sig_finish_addr_offset_reg>.
+    Found 4-bit register for signal <sig_xfer_strt_strb_imreg>.
+    Found 4-bit register for signal <sig_xfer_end_strb_imreg>.
+    Found 1-bit register for signal <sig_xfer_len_eq_0_reg>.
+    Found 32-bit register for signal <sig_xfer_addr_reg>.
+    Found 1-bit register for signal <sig_xfer_type_reg>.
+    Found 8-bit register for signal <sig_xfer_len_reg>.
+    Found 4-bit register for signal <sig_xfer_tag_reg>.
+    Found 6-bit register for signal <sig_xfer_dsa_reg>.
+    Found 1-bit register for signal <sig_xfer_drr_reg>.
+    Found 1-bit register for signal <sig_xfer_eof_reg>.
+    Found 4-bit register for signal <sig_xfer_strt_strb_reg>.
+    Found 4-bit register for signal <sig_xfer_end_strb_reg>.
+    Found 1-bit register for signal <sig_xfer_is_seq_reg>.
+    Found 1-bit register for signal <sig_xfer_cmd_cmplt_reg>.
+    Found 1-bit register for signal <sig_xfer_calc_err_reg>.
+    Found 12-bit register for signal <sig_xfer_btt_reg>.
+    Found 1-bit register for signal <sig_xfer_dre_eof_reg>.
+    Found 1-bit register for signal <sig_xfer_reg_empty>.
+    Found 12-bit register for signal <sig_btt_cntr>.
+    Found 16-bit register for signal <sig_addr_cntr_incr_imreg>.
+    Found 16-bit register for signal <sig_predict_addr_lsh_imreg>.
+    Found 16-bit register for signal <sig_adjusted_addr_incr_reg>.
+    Found 16-bit register for signal <sig_addr_cntr_lsh>.
+    Found 16-bit register for signal <sig_addr_cntr_msh>.
+    Found 1-bit register for signal <sig_first_xfer>.
+    Found 1-bit register for signal <sig_cmd2data_valid>.
+    Found 1-bit register for signal <sig_cmd2addr_valid>.
+    Found 1-bit register for signal <sig_clr_cmd2dre_valid>.
+    Found 3-bit register for signal <sig_pcc_sm_state>.
+    Found 1-bit register for signal <sig_sm_halt_reg>.
+    Found 1-bit register for signal <sig_sm_pop_input_reg>.
+    Found 1-bit register for signal <sig_sm_ld_calc1_reg>.
+    Found 1-bit register for signal <sig_sm_ld_calc2_reg>.
+    Found 1-bit register for signal <sig_ld_xfer_reg>.
+    Found 1-bit register for signal <sig_parent_done>.
+    Found 1-bit register for signal <sig_input_burst_type_reg>.
+    Found finite state machine <FSM_0> for signal <sig_pcc_sm_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 6                                              |
+    | Clock              | primary_aclk (rising_edge)                     |
+    | Reset              | mmap_reset (positive)                          |
+    | Reset type         | synchronous                                    |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <sig_adjusted_addr_incr> created at line 1195.
+    Found 16-bit adder for signal <sig_predict_addr_lsh> created at line 1342.
+    Found 16-bit adder for signal <sig_predict_addr_lsh_im> created at line 1379.
+    Found 16-bit adder for signal <sig_addr_cntr_msh[15]_GND_16_o_add_107_OUT> created at line 1544.
+    Found 12-bit subtractor for signal <GND_16_o_GND_16_o_sub_64_OUT<11:0>> created at line 1147.
+    Found 16-bit subtractor for signal <sig_byte_change_minus1> created at line 585.
+    Found 16-bit subtractor for signal <sig_bytes_to_mbaa> created at line 609.
+    Found 16-bit comparator lessequal for signal <n0191> created at line 1271
+    Found 16-bit comparator greater for signal <GND_16_o_sig_bytes_to_mbaa[15]_LessThan_87_o> created at line 1318
+    Found 16-bit comparator equal for signal <GND_16_o_sig_bytes_to_mbaa[15]_equal_88_o> created at line 1325
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred 212 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  18 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <axi_master_burst_pcc> synthesized.
+
+Synthesizing Unit <axi_master_burst_strb_gen_1>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_strb_gen.vhd".
+        C_ADDR_MODE = 0
+        C_STRB_WIDTH = 4
+        C_OFFSET_WIDTH = 2
+        C_NUM_BYTES_WIDTH = 3
+    Found 5-bit adder for signal <GEN_OFFSET_MODE.sig_end_addr_us> created at line 172.
+    Found 5-bit subtractor for signal <GEN_OFFSET_MODE.sig_incr_offset_bytes_us> created at line 152.
+    Found 32-bit comparator greater for signal <GEN_OFFSET_MODE.sig_strt_addr_int[31]_GND_17_o_LessThan_8_o> created at line 202
+    Found 32-bit comparator greater for signal <GEN_OFFSET_MODE.sig_end_addr_int[31]_GND_17_o_LessThan_10_o> created at line 217
+    Found 32-bit comparator lessequal for signal <n0011> created at line 232
+    Found 32-bit comparator lessequal for signal <n0013> created at line 233
+    Found 32-bit comparator lessequal for signal <n0016> created at line 232
+    Found 32-bit comparator lessequal for signal <n0018> created at line 233
+    Found 32-bit comparator lessequal for signal <n0021> created at line 232
+    Found 32-bit comparator lessequal for signal <n0023> created at line 233
+    Found 32-bit comparator lessequal for signal <n0026> created at line 232
+    Found 32-bit comparator lessequal for signal <n0028> created at line 233
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <axi_master_burst_strb_gen_1> synthesized.
+
+Synthesizing Unit <axi_master_burst_strb_gen_2>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_strb_gen.vhd".
+        C_ADDR_MODE = 1
+        C_STRB_WIDTH = 4
+        C_OFFSET_WIDTH = 2
+        C_NUM_BYTES_WIDTH = 2
+    Found 2-bit subtractor for signal <GEN_ADDR_MODE.sig_end_addr_us> created at line 287.
+    Found 32-bit comparator greater for signal <GEN_ADDR_MODE.sig_end_addr_int[31]_GND_72_o_LessThan_10_o> created at line 353
+    Found 32-bit comparator lessequal for signal <n0011> created at line 369
+    Found 32-bit comparator lessequal for signal <n0013> created at line 370
+    Found 32-bit comparator lessequal for signal <n0016> created at line 369
+    Found 32-bit comparator lessequal for signal <n0018> created at line 370
+    Found 32-bit comparator lessequal for signal <n0021> created at line 369
+    Found 32-bit comparator lessequal for signal <n0023> created at line 370
+    Found 32-bit comparator lessequal for signal <n0026> created at line 369
+    Found 32-bit comparator lessequal for signal <n0028> created at line 370
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <axi_master_burst_strb_gen_2> synthesized.
+
+Synthesizing Unit <axi_master_burst_addr_cntl>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_addr_cntl.vhd".
+        C_ADDR_FIFO_DEPTH = 1
+        C_ADDR_WIDTH = 32
+        C_ADDR_ID = 0
+        C_ADDR_ID_WIDTH = 4
+        C_TAG_WIDTH = 4
+        C_FAMILY = "virtex6"
+    Set property "KEEP = TRUE" for signal <sig_posted_to_axi>.
+    Set property "equivalent_register_removal = no" for signal <sig_posted_to_axi>.
+    Set property "KEEP = TRUE" for signal <sig_posted_to_axi_2>.
+    Set property "equivalent_register_removal = no" for signal <sig_posted_to_axi_2>.
+WARNING:Xst:647 - Input <data2addr_data_rdy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <sig_next_addr_reg>.
+    Found 8-bit register for signal <sig_next_len_reg>.
+    Found 3-bit register for signal <sig_next_size_reg>.
+    Found 2-bit register for signal <sig_next_burst_reg>.
+    Found 1-bit register for signal <sig_rd_addr_valid_reg>.
+    Found 1-bit register for signal <sig_wr_addr_valid_reg>.
+    Found 1-bit register for signal <sig_calc_error_reg>.
+    Found 1-bit register for signal <sig_addr_reg_empty>.
+    Found 1-bit register for signal <sig_addr_reg_full>.
+    Found 1-bit register for signal <sig_posted_to_axi>.
+    Found 1-bit register for signal <sig_posted_to_axi_2>.
+    Summary:
+	inferred  52 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <axi_master_burst_addr_cntl> synthesized.
+
+Synthesizing Unit <axi_master_burst_rddata_cntl>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rddata_cntl.vhd".
+        C_INCLUDE_DRE = 0
+        C_ALIGN_WIDTH = 1
+        C_SEL_ADDR_WIDTH = 2
+        C_DATA_CNTL_FIFO_DEPTH = 1
+        C_MMAP_DWIDTH = 32
+        C_STREAM_DWIDTH = 32
+        C_TAG_WIDTH = 4
+        C_FAMILY = "virtex6"
+    Register <sig_halt_reg_dly1> equivalent to <sig_halt_reg> has been removed
+    Register <sig_rd_xfer_cmplt> equivalent to <sig_last_mmap_dbeat_reg> has been removed
+    Register <sig_halt_reg_dly2> equivalent to <sig_halt_reg> has been removed
+    Register <sig_halt_reg_dly3> equivalent to <sig_halt_reg> has been removed
+    Found 1-bit register for signal <sig_last_mmap_dbeat_reg>.
+    Found 4-bit register for signal <sig_next_tag_reg>.
+    Found 4-bit register for signal <sig_next_strt_strb_reg>.
+    Found 4-bit register for signal <sig_next_last_strb_reg>.
+    Found 1-bit register for signal <sig_next_eof_reg>.
+    Found 1-bit register for signal <sig_next_cmd_cmplt_reg>.
+    Found 1-bit register for signal <sig_next_sequential_reg>.
+    Found 1-bit register for signal <sig_next_calc_error_reg>.
+    Found 1-bit register for signal <sig_dqual_reg_empty>.
+    Found 1-bit register for signal <sig_dqual_reg_full>.
+    Found 2-bit register for signal <sig_ls_addr_cntr[1]_sig_addr_incr_unsgnd[1]_add_23_OUT>.
+    Found 3-bit register for signal <sig_addr_posted_cntr>.
+    Found 1-bit register for signal <sig_first_dbeat>.
+    Found 1-bit register for signal <sig_last_dbeat>.
+    Found 8-bit register for signal <sig_dbeat_cntr>.
+    Found 1-bit register for signal <sig_ld_new_cmd_reg>.
+    Found 4-bit register for signal <sig_coelsc_tag_reg>.
+    Found 1-bit register for signal <sig_coelsc_cmd_cmplt_reg>.
+    Found 1-bit register for signal <sig_coelsc_interr_reg>.
+    Found 1-bit register for signal <sig_coelsc_decerr_reg>.
+    Found 1-bit register for signal <sig_coelsc_slverr_reg>.
+    Found 1-bit register for signal <sig_coelsc_okay_reg>.
+    Found 1-bit register for signal <sig_coelsc_reg_full>.
+    Found 1-bit register for signal <sig_halt_reg>.
+    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_137_o_add_30_OUT> created at line 1155.
+    Found 3-bit subtractor for signal <GND_137_o_GND_137_o_sub_32_OUT<2:0>> created at line 1161.
+    Found 8-bit subtractor for signal <GND_137_o_GND_137_o_sub_41_OUT<7:0>> created at line 1308.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <axi_master_burst_rddata_cntl> synthesized.
+
+Synthesizing Unit <axi_master_burst_rdmux>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rdmux.vhd".
+        C_SEL_ADDR_WIDTH = 2
+        C_MMAP_DWIDTH = 32
+        C_STREAM_DWIDTH = 32
+WARNING:Xst:647 - Input <mstr2data_saddr_lsb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <axi_master_burst_rdmux> synthesized.
+
+Synthesizing Unit <axi_master_burst_rd_status_cntl>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_status_cntl.vhd".
+        C_STS_WIDTH = 8
+        C_TAG_WIDTH = 4
+WARNING:Xst:647 - Input <calc2rsc_calc_error> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addr2rsc_calc_error> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addr2rsc_fifo_empty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <sig_rd_sts_interr_reg>.
+    Found 1-bit register for signal <sig_rd_sts_decerr_reg>.
+    Found 1-bit register for signal <sig_rd_sts_slverr_reg>.
+    Found 1-bit register for signal <sig_rd_sts_okay_reg>.
+    Found 1-bit register for signal <sig_rd_sts_reg_full>.
+    Found 1-bit register for signal <sig_rd_sts_reg_empty>.
+    Found 4-bit register for signal <sig_rd_sts_tag_reg>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <axi_master_burst_rd_status_cntl> synthesized.
+
+Synthesizing Unit <axi_master_burst_skid_buf>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_skid_buf.vhd".
+        C_WDATA_WIDTH = 32
+    Set property "KEEP = TRUE" for signal <sig_m_valid_out>.
+    Set property "equivalent_register_removal = no" for signal <sig_m_valid_out>.
+    Set property "KEEP = TRUE" for signal <sig_m_valid_dup>.
+    Set property "equivalent_register_removal = no" for signal <sig_m_valid_dup>.
+    Set property "KEEP = TRUE" for signal <sig_s_ready_out>.
+    Set property "equivalent_register_removal = no" for signal <sig_s_ready_out>.
+    Set property "KEEP = TRUE" for signal <sig_s_ready_dup>.
+    Set property "equivalent_register_removal = no" for signal <sig_s_ready_dup>.
+    Found 1-bit register for signal <sig_s_ready_out>.
+    Found 1-bit register for signal <sig_s_ready_dup>.
+    Found 1-bit register for signal <sig_m_valid_out>.
+    Found 1-bit register for signal <sig_m_valid_dup>.
+    Found 32-bit register for signal <sig_data_skid_reg>.
+    Found 4-bit register for signal <sig_strb_skid_reg>.
+    Found 1-bit register for signal <sig_last_skid_reg>.
+    Found 32-bit register for signal <sig_data_reg_out>.
+    Found 4-bit register for signal <sig_strb_reg_out>.
+    Found 1-bit register for signal <sig_last_reg_out>.
+    Found 1-bit register for signal <sig_stop_request>.
+    Found 4-bit register for signal <sig_sstrb_stop_mask>.
+    Found 1-bit register for signal <sig_sready_stop_reg>.
+    Found 1-bit register for signal <sig_mvalid_stop_reg>.
+    Found 1-bit register for signal <sig_reset_reg>.
+    Summary:
+	inferred  86 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <axi_master_burst_skid_buf> synthesized.
+
+Synthesizing Unit <axi_master_burst_wrdata_cntl>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wrdata_cntl.vhd".
+        C_REALIGNER_INCLUDED = 0
+        C_ENABLE_STORE_FORWARD = 0
+        C_SF_BYTES_RCVD_WIDTH = 12
+        C_SEL_ADDR_WIDTH = 2
+        C_DATA_CNTL_FIFO_DEPTH = 1
+        C_MMAP_DWIDTH = 32
+        C_STREAM_DWIDTH = 32
+        C_TAG_WIDTH = 4
+        C_FAMILY = "virtex6"
+WARNING:Xst:647 - Input <s2mm_strm_wstrb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s2mm_stbs_asserted> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <s2mm_strm_eop> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <realign2wdc_eop_error> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mstr2data_drr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <sig_halt_reg_dly1> equivalent to <sig_halt_reg> has been removed
+    Register <sig_halt_reg_dly2> equivalent to <sig_halt_reg> has been removed
+    Register <sig_halt_reg_dly3> equivalent to <sig_halt_reg> has been removed
+    Found 1-bit register for signal <sig_tlast_error_reg>.
+    Found 1-bit register for signal <sig_tlast_err_stop>.
+    Found 1-bit register for signal <sig_last_mmap_dbeat_reg>.
+    Found 1-bit register for signal <sig_push_err2wsc>.
+    Found 1-bit register for signal <sig_push_to_wsc>.
+    Found 4-bit register for signal <sig_data2wsc_tag>.
+    Found 1-bit register for signal <sig_data2wsc_calc_err>.
+    Found 1-bit register for signal <sig_data2wsc_last_err>.
+    Found 1-bit register for signal <sig_data2wsc_cmd_cmplt>.
+    Found 1-bit register for signal <sig_ld_new_cmd_reg>.
+    Found 1-bit register for signal <sig_s2mm_ld_nxt_len>.
+    Found 8-bit register for signal <sig_s2mm_wr_len>.
+    Found 4-bit register for signal <sig_next_tag_reg>.
+    Found 4-bit register for signal <sig_next_strt_strb_reg>.
+    Found 4-bit register for signal <sig_next_last_strb_reg>.
+    Found 1-bit register for signal <sig_next_eof_reg>.
+    Found 1-bit register for signal <sig_next_sequential_reg>.
+    Found 1-bit register for signal <sig_next_cmd_cmplt_reg>.
+    Found 1-bit register for signal <sig_next_calc_error_reg>.
+    Found 1-bit register for signal <sig_dqual_reg_empty>.
+    Found 1-bit register for signal <sig_dqual_reg_full>.
+    Found 2-bit register for signal <sig_ls_addr_cntr[1]_sig_addr_incr_unsgnd[1]_add_33_OUT>.
+    Found 3-bit register for signal <sig_addr_posted_cntr>.
+    Found 1-bit register for signal <sig_first_dbeat>.
+    Found 1-bit register for signal <sig_last_dbeat>.
+    Found 8-bit register for signal <sig_dbeat_cntr>.
+    Found 1-bit register for signal <sig_halt_reg>.
+    Found 1-bit register for signal <sig_wr_xfer_cmplt>.
+    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_141_o_add_41_OUT> created at line 1844.
+    Found 3-bit subtractor for signal <GND_141_o_GND_141_o_sub_43_OUT<2:0>> created at line 1850.
+    Found 8-bit subtractor for signal <GND_141_o_GND_141_o_sub_52_OUT<7:0>> created at line 1308.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <axi_master_burst_wrdata_cntl> synthesized.
+
+Synthesizing Unit <axi_master_burst_wr_status_cntl>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_status_cntl.vhd".
+        C_ENABLE_STORE_FORWARD = 0
+        C_SF_BYTES_RCVD_WIDTH = 12
+        C_STS_FIFO_DEPTH = 3
+        C_STS_WIDTH = 8
+        C_TAG_WIDTH = 4
+        C_FAMILY = "virtex6"
+WARNING:Xst:647 - Input <data2wsc_bytes_rcvd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <calc2wsc_calc_error> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addr2wsc_fifo_empty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <data2wsc_eop> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_status_cntl.vhd" line 619: Output port <fifo_wr_full> of the instance <I_WRESP_STATUS_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_status_cntl.vhd" line 619: Output port <fifo_rd_empty> of the instance <I_WRESP_STATUS_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_status_cntl.vhd" line 835: Output port <fifo_wr_full> of the instance <GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_status_cntl.vhd" line 835: Output port <fifo_rd_empty> of the instance <GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO> is unconnected or connected to loadless signal.
+    Register <sig_halt_reg_dly1> equivalent to <sig_halt_reg> has been removed
+    Register <sig_halt_reg_dly2> equivalent to <sig_halt_reg> has been removed
+    Register <sig_halt_reg_dly3> equivalent to <sig_halt_reg> has been removed
+    Found 3-bit register for signal <sig_wdc_statcnt>.
+    Found 4-bit register for signal <sig_coelsc_tag_reg>.
+    Found 1-bit register for signal <sig_coelsc_interr_reg>.
+    Found 1-bit register for signal <sig_coelsc_decerr_reg>.
+    Found 1-bit register for signal <sig_coelsc_slverr_reg>.
+    Found 1-bit register for signal <sig_coelsc_okay_reg>.
+    Found 1-bit register for signal <sig_coelsc_reg_full>.
+    Found 1-bit register for signal <sig_coelsc_reg_empty>.
+    Found 3-bit register for signal <sig_addr_posted_cntr>.
+    Found 1-bit register for signal <sig_halt_reg>.
+    Found 1-bit register for signal <sig_wdc_status_going_full>.
+    Found 3-bit adder for signal <sig_wdc_statcnt[2]_GND_142_o_add_10_OUT> created at line 731.
+    Found 3-bit adder for signal <sig_addr_posted_cntr[2]_GND_142_o_add_25_OUT> created at line 1306.
+    Found 3-bit subtractor for signal <GND_142_o_GND_142_o_sub_12_OUT<2:0>> created at line 737.
+    Found 3-bit subtractor for signal <GND_142_o_GND_142_o_sub_27_OUT<2:0>> created at line 1312.
+    Found 3-bit comparator lessequal for signal <n0028> created at line 679
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <axi_master_burst_wr_status_cntl> synthesized.
+
+Synthesizing Unit <axi_master_burst_fifo_1>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_fifo.vhd".
+        C_DWIDTH = 2
+        C_DEPTH = 3
+        C_IS_ASYNC = 0
+        C_PRIM_TYPE = 2
+        C_FAMILY = "virtex6"
+WARNING:Xst:647 - Input <fifo_async_rd_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <fifo_async_rd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_fifo.vhd" line 518: Output port <Addr> of the instance <USE_SRL_FIFO.I_SYNC_FIFO> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <sig_init_reg2>.
+    Found 1-bit register for signal <sig_init_done>.
+    Found 1-bit register for signal <sig_inhibit_rdy_n>.
+    Found 1-bit register for signal <sig_init_reg>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <axi_master_burst_fifo_1> synthesized.
+
+Synthesizing Unit <srl_fifo_f_1>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd".
+        C_DWIDTH = 2
+        C_DEPTH = 3
+        C_FAMILY = "virtex6"
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" line 169: Output port <Underflow> of the instance <I_SRL_FIFO_RBU_F> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" line 169: Output port <Overflow> of the instance <I_SRL_FIFO_RBU_F> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <srl_fifo_f_1> synthesized.
+
+Synthesizing Unit <srl_fifo_rbu_f_1>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd".
+        C_DWIDTH = 2
+        C_DEPTH = 3
+        C_FAMILY = "virtex6"
+    Found 1-bit register for signal <underflow_i>.
+    Found 1-bit register for signal <overflow_i>.
+    Found 1-bit register for signal <FIFO_Full>.
+    Found 3-bit comparator lessequal for signal <n0015> created at line 324
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <srl_fifo_rbu_f_1> synthesized.
+
+Synthesizing Unit <cntr_incr_decr_addn_f>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd".
+        C_SIZE = 3
+        C_FAMILY = "virtex6"
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" line 211: Output port <LO> of the instance <STRUCTURAL_A_GEN.Addr_Counters[2].MUXCY_L_I> is unconnected or connected to loadless signal.
+    Summary:
+Unit <cntr_incr_decr_addn_f> synthesized.
+
+Synthesizing Unit <dynshreg_f_1>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd".
+        C_DEPTH = 3
+        C_DWIDTH = 2
+        C_FAMILY = "virtex6"
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" line 281: Output port <Q15> of the instance <STRUCTURAL_A_GEN.BIT_OF_WIDTH_GEN[0].CASCADES_GEN[0].W16_GEN.SRLC16E_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" line 281: Output port <Q15> of the instance <STRUCTURAL_A_GEN.BIT_OF_WIDTH_GEN[1].CASCADES_GEN[0].W16_GEN.SRLC16E_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <dynshreg_f_1> synthesized.
+
+Synthesizing Unit <axi_master_burst_fifo_2>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_fifo.vhd".
+        C_DWIDTH = 7
+        C_DEPTH = 3
+        C_IS_ASYNC = 0
+        C_PRIM_TYPE = 2
+        C_FAMILY = "virtex6"
+WARNING:Xst:647 - Input <fifo_async_rd_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <fifo_async_rd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_fifo.vhd" line 518: Output port <Addr> of the instance <USE_SRL_FIFO.I_SYNC_FIFO> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <sig_init_reg2>.
+    Found 1-bit register for signal <sig_init_done>.
+    Found 1-bit register for signal <sig_inhibit_rdy_n>.
+    Found 1-bit register for signal <sig_init_reg>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <axi_master_burst_fifo_2> synthesized.
+
+Synthesizing Unit <srl_fifo_f_2>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd".
+        C_DWIDTH = 7
+        C_DEPTH = 3
+        C_FAMILY = "virtex6"
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" line 169: Output port <Underflow> of the instance <I_SRL_FIFO_RBU_F> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" line 169: Output port <Overflow> of the instance <I_SRL_FIFO_RBU_F> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <srl_fifo_f_2> synthesized.
+
+Synthesizing Unit <srl_fifo_rbu_f_2>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd".
+        C_DWIDTH = 7
+        C_DEPTH = 3
+        C_FAMILY = "virtex6"
+    Found 1-bit register for signal <underflow_i>.
+    Found 1-bit register for signal <overflow_i>.
+    Found 1-bit register for signal <FIFO_Full>.
+    Found 3-bit comparator lessequal for signal <n0015> created at line 324
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <srl_fifo_rbu_f_2> synthesized.
+
+Synthesizing Unit <dynshreg_f_2>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd".
+        C_DEPTH = 3
+        C_DWIDTH = 7
+        C_FAMILY = "virtex6"
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" line 281: Output port <Q15> of the instance <STRUCTURAL_A_GEN.BIT_OF_WIDTH_GEN[0].CASCADES_GEN[0].W16_GEN.SRLC16E_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" line 281: Output port <Q15> of the instance <STRUCTURAL_A_GEN.BIT_OF_WIDTH_GEN[1].CASCADES_GEN[0].W16_GEN.SRLC16E_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" line 281: Output port <Q15> of the instance <STRUCTURAL_A_GEN.BIT_OF_WIDTH_GEN[2].CASCADES_GEN[0].W16_GEN.SRLC16E_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" line 281: Output port <Q15> of the instance <STRUCTURAL_A_GEN.BIT_OF_WIDTH_GEN[3].CASCADES_GEN[0].W16_GEN.SRLC16E_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" line 281: Output port <Q15> of the instance <STRUCTURAL_A_GEN.BIT_OF_WIDTH_GEN[4].CASCADES_GEN[0].W16_GEN.SRLC16E_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" line 281: Output port <Q15> of the instance <STRUCTURAL_A_GEN.BIT_OF_WIDTH_GEN[5].CASCADES_GEN[0].W16_GEN.SRLC16E_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" line 281: Output port <Q15> of the instance <STRUCTURAL_A_GEN.BIT_OF_WIDTH_GEN[6].CASCADES_GEN[0].W16_GEN.SRLC16E_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <dynshreg_f_2> synthesized.
+
+Synthesizing Unit <axi_master_burst_skid2mm_buf>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_skid2mm_buf.vhd".
+        C_MDATA_WIDTH = 32
+        C_SDATA_WIDTH = 32
+        C_ADDR_LSB_WIDTH = 2
+    Set property "KEEP = TRUE" for signal <sig_m_valid_out>.
+    Set property "equivalent_register_removal = no" for signal <sig_m_valid_out>.
+    Set property "KEEP = TRUE" for signal <sig_m_valid_dup>.
+    Set property "equivalent_register_removal = no" for signal <sig_m_valid_dup>.
+    Set property "KEEP = TRUE" for signal <sig_s_ready_out>.
+    Set property "equivalent_register_removal = no" for signal <sig_s_ready_out>.
+    Set property "KEEP = TRUE" for signal <sig_s_ready_dup>.
+    Set property "equivalent_register_removal = no" for signal <sig_s_ready_dup>.
+    Found 1-bit register for signal <sig_s_ready_out>.
+    Found 1-bit register for signal <sig_s_ready_dup>.
+    Found 1-bit register for signal <sig_m_valid_out>.
+    Found 1-bit register for signal <sig_m_valid_dup>.
+    Found 32-bit register for signal <sig_data_skid_reg>.
+    Found 4-bit register for signal <sig_strb_skid_reg>.
+    Found 1-bit register for signal <sig_last_skid_reg>.
+    Found 32-bit register for signal <sig_data_reg_out>.
+    Found 4-bit register for signal <sig_strb_reg_out>.
+    Found 1-bit register for signal <sig_last_reg_out>.
+    Found 1-bit register for signal <sig_reset_reg>.
+    Summary:
+	inferred  79 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <axi_master_burst_skid2mm_buf> synthesized.
+
+Synthesizing Unit <axi_master_burst_wr_demux>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_demux.vhd".
+        C_SEL_ADDR_WIDTH = 2
+        C_MMAP_DWIDTH = 32
+        C_STREAM_DWIDTH = 32
+WARNING:Xst:647 - Input <debeat_saddr_lsb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <axi_master_burst_wr_demux> synthesized.
+
+Synthesizing Unit <axi_master_burst_rd_llink>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_rd_llink.vhd".
+        C_NATIVE_DWIDTH = 32
+WARNING:Xst:647 - Input <rdllink_addr_req_posted> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdllink_xfer_cmplt> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ip2bus_mstrd_dst_dsc_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <sig_stream_sof>.
+    Found 1-bit register for signal <sig_allow_rd_requests>.
+    Found 1-bit register for signal <sig_rd_error_reg>.
+    Found 1-bit register for signal <sig_rd_discontinue>.
+    Found 1-bit register for signal <sig_llink_busy>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <axi_master_burst_rd_llink> synthesized.
+
+Synthesizing Unit <axi_master_burst_wr_llink>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_master_burst_v1_00_a/hdl/vhdl/axi_master_burst_wr_llink.vhd".
+        C_NATIVE_DWIDTH = 32
+WARNING:Xst:647 - Input <ip2bus_mstwr_rem> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wrllink_addr_req_posted> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wrllink_xfer_cmplt> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ip2bus_mstwr_sof_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ip2bus_mstwr_src_dsc_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <sig_allow_wr_requests>.
+    Found 1-bit register for signal <sig_wr_error_reg>.
+    Found 1-bit register for signal <sig_wr_dsc_in_prog>.
+    Found 1-bit register for signal <sig_assert_discontinue>.
+    Found 1-bit register for signal <sig_llink_busy>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <axi_master_burst_wr_llink> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "/home/thombang/repos/pg-hpepc-reconos/lda/build.hw/pcores/reconos_memif_memory_controller_v1_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:Xst:647 - Input <BUS2IP_MstRd_Rem> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BUS2IP_Mst_Error> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BUS2IP_MstRd_Sof_N> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BUS2IP_MstRd_Eof_N> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BUS2IP_MstRd_Src_Dsc_N> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BUS2IP_MstWr_Dst_Dsc_N> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <state>.
+    Found 8-bit register for signal <mem_op>.
+    Found 24-bit register for signal <mem_length>.
+    Found 24-bit register for signal <mem_count>.
+    Found 32-bit register for signal <mem_addr>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 8                                              |
+    | Clock              | BUS2IP_Clk (rising_edge)                       |
+    | Reset              | BUS2IP_Resetn (negative)                       |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | state_read_cmd                                 |
+    | Power Up State     | state_read_cmd                                 |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 24-bit subtractor for signal <GND_165_o_GND_165_o_sub_50_OUT<23:0>> created at line 1308.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0107> created at line 36.
+    Found 24-bit comparator not equal for signal <mem_count[23]_mem_length[23]_equal_49_o> created at line 208
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  88 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <user_logic> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x4-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 18
+ 12-bit subtractor                                     : 1
+ 16-bit adder                                          : 4
+ 16-bit subtractor                                     : 2
+ 2-bit subtractor                                      : 1
+ 24-bit subtractor                                     : 1
+ 3-bit addsub                                          : 4
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 2
+# Registers                                            : 229
+ 1-bit register                                        : 164
+ 12-bit register                                       : 3
+ 16-bit register                                       : 5
+ 2-bit register                                        : 5
+ 24-bit register                                       : 2
+ 3-bit register                                        : 6
+ 32-bit register                                       : 10
+ 4-bit register                                        : 26
+ 6-bit register                                        : 2
+ 8-bit register                                        : 6
+# Comparators                                          : 26
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 24-bit comparator not equal                           : 1
+ 3-bit comparator lessequal                            : 3
+ 32-bit comparator greater                             : 3
+ 32-bit comparator lessequal                           : 16
+# Multiplexers                                         : 79
+ 1-bit 2-to-1 multiplexer                              : 50
+ 1-bit 4-to-1 multiplexer                              : 1
+ 12-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 1
+ 24-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 10
+ 8-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 2
+# Xors                                                 : 6
+ 1-bit xor2                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <axi_master_burst_cmd_status>.
+The following registers are absorbed into counter <sig_tag_counter>: 1 register on signal <sig_tag_counter>.
+Unit <axi_master_burst_cmd_status> synthesized (advanced).
+
+Synthesizing (advanced) Unit <axi_master_burst_pcc>.
+The following registers are absorbed into accumulator <sig_btt_cntr>: 1 register on signal <sig_btt_cntr>.
+The following registers are absorbed into counter <sig_addr_cntr_msh>: 1 register on signal <sig_addr_cntr_msh>.
+Unit <axi_master_burst_pcc> synthesized (advanced).
+
+Synthesizing (advanced) Unit <axi_master_burst_rddata_cntl>.
+The following registers are absorbed into counter <sig_dbeat_cntr>: 1 register on signal <sig_dbeat_cntr>.
+The following registers are absorbed into counter <sig_addr_posted_cntr>: 1 register on signal <sig_addr_posted_cntr>.
+Unit <axi_master_burst_rddata_cntl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <axi_master_burst_stbs_set>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_sig_stbs_asserted<3:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 4-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("0000",tstrb_in)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sig_stbs_asserted> |          |
+    -----------------------------------------------------------------------
+Unit <axi_master_burst_stbs_set> synthesized (advanced).
+
+Synthesizing (advanced) Unit <axi_master_burst_wr_status_cntl>.
+The following registers are absorbed into counter <sig_wdc_statcnt>: 1 register on signal <sig_wdc_statcnt>.
+The following registers are absorbed into counter <sig_addr_posted_cntr>: 1 register on signal <sig_addr_posted_cntr>.
+Unit <axi_master_burst_wr_status_cntl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <axi_master_burst_wrdata_cntl>.
+The following registers are absorbed into counter <sig_addr_posted_cntr>: 1 register on signal <sig_addr_posted_cntr>.
+The following registers are absorbed into counter <sig_dbeat_cntr>: 1 register on signal <sig_dbeat_cntr>.
+Unit <axi_master_burst_wrdata_cntl> synthesized (advanced).
+WARNING:Xst:2677 - Node <sig_input_dsa_reg_1> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_input_dsa_reg_2> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_input_dsa_reg_3> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_input_dsa_reg_4> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_input_dsa_reg_5> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_xfer_dsa_reg_1> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_xfer_dsa_reg_2> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_xfer_dsa_reg_3> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_xfer_dsa_reg_4> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_xfer_dsa_reg_5> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_reg_8> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_reg_9> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_reg_10> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_reg_11> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_reg_12> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_reg_13> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_reg_14> of sequential type is unconnected in block <axi_master_burst_pcc>.
+WARNING:Xst:2677 - Node <sig_adjusted_addr_incr_reg_15> of sequential type is unconnected in block <axi_master_burst_pcc>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x4-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 9
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+ 2-bit subtractor                                      : 1
+ 24-bit subtractor                                     : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 8
+ 16-bit up counter                                     : 1
+ 3-bit updown counter                                  : 4
+ 4-bit up counter                                      : 1
+ 8-bit down counter                                    : 2
+# Accumulators                                         : 1
+ 12-bit down loadable accumulator                      : 1
+# Registers                                            : 768
+ Flip-Flops                                            : 768
+# Comparators                                          : 26
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 24-bit comparator not equal                           : 1
+ 3-bit comparator lessequal                            : 3
+ 32-bit comparator greater                             : 3
+ 32-bit comparator lessequal                           : 16
+# Multiplexers                                         : 90
+ 1-bit 2-to-1 multiplexer                              : 66
+ 1-bit 4-to-1 multiplexer                              : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 24-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 10
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+# Xors                                                 : 6
+ 1-bit xor2                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <sig_xfer_len_reg_6> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_xfer_len_reg_7> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sig_halt_reg> has a constant value of 0 in block <axi_master_burst_rddata_cntl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sig_halt_reg> has a constant value of 0 in block <axi_master_burst_wrdata_cntl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sig_halt_reg> has a constant value of 0 in block <axi_master_burst_wr_status_cntl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch sig_axi_por_reg1 hinder the constant cleaning in the block axi_master_burst_reset.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <sig_coelsc_cmd_cmplt_reg> in Unit <axi_master_burst_rddata_cntl> is equivalent to the following FF/Latch, which will be removed : <sig_coelsc_reg_full> 
+WARNING:Xst:2677 - Node <sig_ls_addr_cntr_0> of sequential type is unconnected in block <axi_master_burst_rddata_cntl>.
+WARNING:Xst:2677 - Node <sig_ls_addr_cntr_1> of sequential type is unconnected in block <axi_master_burst_rddata_cntl>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <reconos_memif_memory_controller_0/ul/FSM_1> on signal <state[1:3]> with user encoding.
+-----------------------------------
+ State                 | Encoding
+-----------------------------------
+ state_read_cmd        | 000
+ state_read_addr       | 001
+ state_process_write_0 | 010
+ state_process_write_1 | 011
+ state_process_read_0  | 100
+ state_process_read_1  | 101
+ state_cmplt           | 110
+-----------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/FSM_0> on signal <sig_pcc_sm_state[1:3]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ init              | 000
+ wait_for_cmd      | 001
+ calc_1            | 010
+ calc_2            | 011
+ wait_on_xfer_push | 100
+ chk_if_done       | 101
+ error_trap        | 110
+-------------------------------
+WARNING:Xst:1293 - FF/Latch <sig_addr_cntr_incr_imreg_9> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_imreg_10> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_imreg_11> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_imreg_12> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_imreg_13> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_imreg_14> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sig_addr_cntr_incr_imreg_15> has a constant value of 0 in block <axi_master_burst_pcc>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <system_reconos_memif_memory_controller_0_wrapper> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <axi_master_burst_rd_wr_cntlr> ...
+
+Optimizing unit <axi_master_burst_pcc> ...
+
+Optimizing unit <axi_master_burst_strb_gen_1> ...
+
+Optimizing unit <axi_master_burst_addr_cntl> ...
+
+Optimizing unit <axi_master_burst_rddata_cntl> ...
+
+Optimizing unit <axi_master_burst_rd_status_cntl> ...
+
+Optimizing unit <axi_master_burst_skid_buf> ...
+
+Optimizing unit <axi_master_burst_wrdata_cntl> ...
+
+Optimizing unit <axi_master_burst_wr_status_cntl> ...
+
+Optimizing unit <axi_master_burst_fifo_1> ...
+
+Optimizing unit <srl_fifo_rbu_f_1> ...
+
+Optimizing unit <axi_master_burst_fifo_2> ...
+
+Optimizing unit <srl_fifo_rbu_f_2> ...
+
+Optimizing unit <axi_master_burst_skid2mm_buf> ...
+
+Optimizing unit <axi_master_burst_reset> ...
+
+Optimizing unit <axi_master_burst_cmd_status> ...
+
+Optimizing unit <axi_master_burst_rd_llink> ...
+
+Optimizing unit <axi_master_burst_wr_llink> ...
+WARNING:Xst:1293 - FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_burst_reg_1> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_size_reg_2> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_size_reg_0> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_len_reg_7> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_len_reg_6> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_mvalid_stop_reg> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sready_stop_reg> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_stop_request> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_mvalid_stop_reg> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sready_stop_reg> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_stop_request> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_23> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_22> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_21> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_20> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_19> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_18> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_17> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_16> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_15> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_14> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_13> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ul/mem_length_12> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_11> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_10> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_9> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_8> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_7> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_6> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_5> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_4> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_btt_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_dre_eof_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_dsa_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_xfer_drr_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_input_drr_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_input_dsa_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_tag_reg_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_tag_reg_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_tag_reg_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_tag_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_first_dbeat> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_okay_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_slverr_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_coelsc_decerr_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_last_strb_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_strt_strb_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_tag_reg_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_tag_reg_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_tag_reg_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_next_tag_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_okay_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_slverr_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_decerr_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_tag_reg_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_tag_reg_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_tag_reg_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_STATUS_CNTLR/sig_rd_sts_tag_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_strb_reg_out_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_strb_reg_out_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_strb_reg_out_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_strb_reg_out_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_strb_skid_reg_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_strb_skid_reg_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_strb_skid_reg_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_strb_skid_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sstrb_stop_mask_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sstrb_stop_mask_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sstrb_stop_mask_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_sstrb_stop_mask_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_reg_out_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_strb_skid_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_sstrb_stop_mask_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_ls_addr_cntr_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_ls_addr_cntr_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_wr_xfer_cmplt> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_s2mm_ld_nxt_len> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_s2mm_wr_len_7> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_s2mm_wr_len_6> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_s2mm_wr_len_5> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_s2mm_wr_len_4> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_s2mm_wr_len_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_s2mm_wr_len_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_s2mm_wr_len_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_s2mm_wr_len_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/sig_coelsc_tag_reg_3> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/sig_coelsc_tag_reg_2> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/sig_coelsc_tag_reg_1> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/sig_coelsc_tag_reg_0> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/sig_coelsc_okay_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/sig_coelsc_slverr_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/sig_coelsc_decerr_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/overflow_i> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/underflow_i> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/overflow_i> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/USE_SRL_FIFO.I_SYNC_FIFO/I_SRL_FIFO_RBU_F/underflow_i> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_CMD_STATUS_MODULE/sig_error_sh_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_CMD_STATUS_MODULE/sig_stat_error_reg> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_RD_LLINK_ADAPTER/sig_stream_sof> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:2677 - Node <reconos_memif_memory_controller_0/ipif/I_WR_LLINK_ADAPTER/sig_assert_discontinue> of sequential type is unconnected in block <system_reconos_memif_memory_controller_0_wrapper>.
+WARNING:Xst:1293 - FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_7> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_dbeat_cntr_6> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_dbeat_cntr_7> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL/sig_dbeat_cntr_6> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/sig_wdc_statcnt_2> has a constant value of 0 in block <system_reconos_memif_memory_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_done> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/sig_init_done> 
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_STRM_SKID_BUF/sig_reset_reg> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_READ_STREAM_SKID_BUF/sig_reset_reg> <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_reg> <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/sig_init_reg> <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WRITE_MMAP_SKID_BUF/sig_reset_reg> 
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_inhibit_rdy_n> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/sig_inhibit_rdy_n> 
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ipif/I_CMD_STATUS_MODULE/sig_cmd_type_req> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following 5 FFs/Latches, which will be removed : <reconos_memif_memory_controller_0/ipif/I_CMD_STATUS_MODULE/sig_cmd_full_reg> <reconos_memif_memory_controller_0/ipif/I_CMD_STATUS_MODULE/sig_cmd_mst_be_3> <reconos_memif_memory_controller_0/ipif/I_CMD_STATUS_MODULE/sig_cmd_mst_be_2> <reconos_memif_memory_controller_0/ipif/I_CMD_STATUS_MODULE/sig_cmd_mst_be_1> <reconos_memif_memory_controller_0/ipif/I_CMD_STATUS_MODULE/sig_cmd_mst_be_0> 
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_LLINK_ADAPTER/sig_rd_error_reg> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <reconos_memif_memory_controller_0/ipif/I_WR_LLINK_ADAPTER/sig_wr_error_reg> 
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ul/mem_count_0> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <reconos_memif_memory_controller_0/ul/mem_length_0> 
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ul/mem_count_1> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <reconos_memif_memory_controller_0/ul/mem_length_1> 
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_next_size_reg_1> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_ADDR_CNTL/sig_addr_reg_full> 
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_input_eof_reg> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_input_burst_type_reg> 
+INFO:Xst:2261 - The FF/Latch <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_reg2> in Unit <system_reconos_memif_memory_controller_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_WR_STATUS_CNTLR/GEN_OMIT_STORE_FORWARD.I_DATA_CNTL_STATUS_FIFO/sig_init_reg2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_reconos_memif_memory_controller_0_wrapper, actual ratio is 2.
+FlipFlop reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_addr_cntr_lsh_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 677
+ Flip-Flops                                            : 677
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_reconos_memif_memory_controller_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 749
+#      GND                         : 1
+#      INV                         : 38
+#      LUT1                        : 10
+#      LUT2                        : 56
+#      LUT3                        : 152
+#      LUT4                        : 77
+#      LUT5                        : 79
+#      LUT6                        : 166
+#      MUXCY                       : 72
+#      MUXCY_L                     : 6
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 84
+# FlipFlops/Latches                : 677
+#      FD                          : 58
+#      FDC                         : 3
+#      FDE                         : 266
+#      FDR                         : 38
+#      FDRE                        : 298
+#      FDS                         : 8
+#      FDSE                        : 6
+# Shift Registers                  : 9
+#      SRLC16E                     : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             677  out of  106400     0%  
+ Number of Slice LUTs:                  587  out of  53200     1%  
+    Number used as Logic:               578  out of  53200     1%  
+    Number used as Memory:                9  out of  17400     0%  
+       Number used as SRL:                9
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    907
+   Number with an unused Flip Flop:     230  out of    907    25%  
+   Number with an unused LUT:           320  out of    907    35%  
+   Number of fully used LUT-FF pairs:   357  out of    907    39%  
+   Number of unique control sets:        39
+
+IO Utilization: 
+ Number of IOs:                         336
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                    | Load  |
+-----------------------------------+----------------------------------------------------------+-------+
+M_AXI_ACLK                         | NONE(reconos_memif_memory_controller_0/ul/state_FSM_FFd1)| 686   |
+-----------------------------------+----------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.091ns (Maximum Frequency: 244.439MHz)
+   Minimum input arrival time before clock: 2.532ns
+   Maximum output required time after clock: 1.444ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M_AXI_ACLK'
+  Clock period: 4.091ns (frequency: 244.439MHz)
+  Total number of paths / destination ports: 23484 / 1512
+-------------------------------------------------------------------------
+Delay:               4.091ns (Levels of Logic = 7)
+  Source:            reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_addr_cntr_lsh_4 (FF)
+  Destination:       reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_adjusted_addr_incr_reg_7 (FF)
+  Source Clock:      M_AXI_ACLK rising
+  Destination Clock: M_AXI_ACLK rising
+
+  Data Path: reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_addr_cntr_lsh_4 to reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_adjusted_addr_incr_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.282   0.771  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_addr_cntr_lsh_4 (reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_addr_cntr_lsh_4)
+     LUT6:I1->O           12   0.053   0.485  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Msub_sig_bytes_to_mbaa_cy<5>11 (reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Msub_sig_bytes_to_mbaa_cy<5>)
+     LUT5:I4->O            1   0.053   0.000  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/GND_16_o_sig_bytes_to_mbaa[15]_LessThan_87_o15_SW0_G (N129)
+     MUXF7:I1->O           5   0.217   0.440  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/GND_16_o_sig_bytes_to_mbaa[15]_LessThan_87_o15_SW0 (N60)
+     LUT6:I5->O            4   0.053   0.505  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/GND_16_o_sig_bytes_to_mbaa[15]_LessThan_87_o21_SW1 (N97)
+     LUT6:I4->O            3   0.053   0.649  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Mmux_sig_addr_cntr_incr61 (reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Madd_sig_adjusted_addr_incr_lut<5>)
+     LUT5:I1->O            1   0.053   0.413  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Madd_sig_adjusted_addr_incr_xor<7>11_SW0 (N63)
+     LUT6:I5->O            1   0.053   0.000  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/Madd_sig_adjusted_addr_incr_xor<7>11 (reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_adjusted_addr_incr<7>)
+     FDR:D                     0.011          reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_MSTR_PCC/sig_adjusted_addr_incr_reg_7
+    ----------------------------------------
+    Total                      4.091ns (0.828ns logic, 3.263ns route)
+                                       (20.2% logic, 79.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M_AXI_ACLK'
+  Total number of paths / destination ports: 720 / 512
+-------------------------------------------------------------------------
+Offset:              2.532ns (Levels of Logic = 4)
+  Source:            MEMIF_Hwt2Mem_In_Empty (PAD)
+  Destination:       reconos_memif_memory_controller_0/ul/state_FSM_FFd2 (FF)
+  Destination Clock: M_AXI_ACLK rising
+
+  Data Path: MEMIF_Hwt2Mem_In_Empty to reconos_memif_memory_controller_0/ul/state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            1   0.053   0.739  reconos_memif_memory_controller_0/ul/state_FSM_FFd2-In2 (reconos_memif_memory_controller_0/ul/state_FSM_FFd2-In2)
+     LUT6:I0->O            2   0.053   0.491  reconos_memif_memory_controller_0/ul/state_FSM_FFd2-In3 (reconos_memif_memory_controller_0/ul/state_FSM_FFd2-In3)
+     LUT5:I3->O            1   0.053   0.739  reconos_memif_memory_controller_0/ul/GND_165_o_GND_165_o_equal_51_o<23>5_SW3 (N114)
+     LUT6:I0->O            1   0.053   0.000  reconos_memif_memory_controller_0/ul/state_FSM_FFd2-In5 (reconos_memif_memory_controller_0/ul/state_FSM_FFd2-In)
+     FDC:D                     0.011          reconos_memif_memory_controller_0/ul/state_FSM_FFd2
+    ----------------------------------------
+    Total                      2.532ns (0.563ns logic, 1.969ns route)
+                                       (22.2% logic, 77.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M_AXI_ACLK'
+  Total number of paths / destination ports: 215 / 190
+-------------------------------------------------------------------------
+Offset:              1.444ns (Levels of Logic = 2)
+  Source:            reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_2 (FF)
+  Destination:       M_AXI_RREADY (PAD)
+  Source Clock:      M_AXI_ACLK rising
+
+  Data Path: reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_2 to M_AXI_RREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.282   0.629  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_2 (reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_2)
+     LUT3:I0->O            3   0.053   0.427  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_eq_0<2>1 (reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_addr_posted_cntr_eq_0)
+     LUT5:I4->O            6   0.053   0.000  reconos_memif_memory_controller_0/ipif/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL/sig_data2mmap_ready1 (M_AXI_RREADY)
+    ----------------------------------------
+    Total                      1.444ns (0.388ns logic, 1.056ns route)
+                                       (26.9% logic, 73.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            MEMIF_Hwt2Mem_In_Data<31> (PAD)
+  Destination:       DEBUG<67> (PAD)
+
+  Data Path: MEMIF_Hwt2Mem_In_Data<31> to DEBUG<67>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock M_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M_AXI_ACLK     |    4.091|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.72 secs
+ 
+--> 
+
+
+Total memory usage is 551052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  204 (   0 filtered)
+Number of infos    :   65 (   0 filtered)
+
